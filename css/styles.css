@@ -63,7 +63,18 @@ button {
   padding: 0 15px;
 }
 
-.header-navigation {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigatore {
   display: flex;
   align-items: center;
 }
@@ -77,62 +88,75 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-logo:hover,
-.header-logo span:hover,
-.header-logo:focus,
-.header-logo span:focus {
-  color: #404bbf;
-}
-
-.header-logo span {
+.header-logo-color {
   color: #2e2f42;
 }
 
-.header-nav-menu {
+.header-menu-list {
   display: flex;
   gap: 40px;
 }
 
-.header-nav-menu-item {
+.header-menu-item {
 }
 
-.header-nav-menu-item-link {
+.header-menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-menu-item-link:hover,
-.header-nav-menu-item-link:focus {
+.header-after-link {
+  position: relative;
   color: #404bbf;
 }
 
-.header-address {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.header-after-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
-.header-address-list {
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts-list {
   display: flex;
   gap: 40px;
 }
 
-.header-address-item {
+.header-contacts-item {
 }
 
-.header-address-link {
+.header-contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-address-link:hover,
-.header-address-link:focus {
+.header-logo:hover,
+.header-logo:focus,
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: #404bbf;
 }
 
@@ -142,18 +166,26 @@ button {
 }
 
 .hero-image {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  border-bottom: 1px inside #e7e9fc;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-hero.jpg);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  background-color: #2e2f42;
-  padding: 188px 0;
+  background-position: center;
+  background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .hero-image-title {
@@ -163,6 +195,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
   max-width: 496px;
   text-transform: capitalize;
   margin: 0 auto 24px;
