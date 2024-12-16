@@ -38,6 +38,8 @@ button {
   margin: 0 auto;
 }
 
+/* header */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -135,6 +137,10 @@ button {
   color: #404bbf;
 }
 
+/* end header */
+
+/* section one (hero) */
+
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -193,6 +199,11 @@ button {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+/* end section one (hero) */
+
+/* section two */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -254,6 +265,10 @@ button {
   color: #434455;
 }
 
+/* end section two */
+
+/* section three */
+
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -269,6 +284,7 @@ button {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .team-list {
   gap: 24px;
   display: flex;
@@ -281,6 +297,7 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .icon-list {
   display: flex;
   justify-content: center;
@@ -341,6 +358,11 @@ button {
   color: #434455;
   text-align: center;
 }
+
+/* end section three */
+
+/* section four (portfolio) */
+
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -370,11 +392,13 @@ button {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .portfolio-list-item {
   width: calc ((100% - 48px) / 3);
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-text {
   font-weight: 400;
   font-size: 16px;
@@ -382,6 +406,7 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .div-portfolio-text {
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -417,6 +442,10 @@ button {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* end section four (portfolio) */
+
+/* footer */
 
 .footer {
   background-color: #2e2f42;
@@ -499,3 +528,5 @@ button {
 .icon-list-items-link-footer:focus {
   background-color: #31d0aa;
 }
+
+/* end footer */
