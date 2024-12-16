@@ -1,275 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YuraHez_goit-markup-hw-02</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--connect the normalizer later-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha256-soE4r4N0fsirpUwfHmbJWEyJppzuFQwWxJv8QVjhS5g="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body class="body">
-    <!--header. "Top Line" in Figma-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Gumeniuk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+    href="./css/styles.css">
+</head>
+<body>
+    <!-- #region header -->
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigatore">
-          <a class="header-logo" href="./index.html"
-            >Web<span class="header-logo-color">Studio</span></a
-          >
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link header-after-link" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Portfolio</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header-contacts">
-          <ul class="header-contacts-list">
-            <li class="header-contacts-item">
-              <a class="header-contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-contacts-list">
-              <a class="header-contacts-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-    <!--end of header."Top Line" in Figma-->
-    <main class="main">
-      <!--section "Hero image" in Figma; "перша секція" у ДЗ-->
-      <section class="hero-image">
-        <div class="container">
-          <h1 class="hero-image-title">
-            Effective Solutions for Your Business
-          </h1>
-          <button type="button" class="hero-image-button">Order Service</button>
+        <div class="container header-container">
+          <nav class="header-navigatore">
+            <a class="header-logo" href="./index.html"
+              >Web<span class="header-logo-color">Studio</span></a
+            >
+            <ul class="header-menu-list">
+              <li class="header-menu-item">
+                <a class="header-menu-link header-after-link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <address class="header-contacts">
+            <ul class="header-contacts-list">
+              <li class="header-contacts-item">
+                <a class="header-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-contacts-list">
+                <a class="header-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-      </section>
-      <!--end of section "Hero image" in Figma ; "перша секція" у ДЗ-->
-      <!--"Section 1" in Figma "друга секція" у ДЗ-->
-      <section class="features">
-        <div class="container">
-          <h2 class="visually-hidden">Features</h2>
-          <ul class="features-list">
-            <li class="features-item">
-              <h3 class="features-item-title">Strategy</h3>
-              <p class="features-item-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Punctuality</h3>
-              <p class="features-item-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Diligence</h3>
-              <p class="features-item-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Technologies</h3>
-              <p class="features-item-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
+      </header>
+    <!-- #endregion header -->
+    <main>
+        <!-- #region sectionone -->
+        <section class="hero">
+            <div class="container container-hero">
+              <h1 class="hero-title">Effective Solutions for Your Business</h1>
+              <button class="hero-button" type="button">Order Service</button>
+            </div>
+          </section>
+        <!-- #endregion sectionone -->
+        <!-- #region sectiontwo -->
+        <section class="adventures">
+            <div class="container">
+                <h2 class="visually-hidden">Adventures and Features</h2>
+            <ul class="adventures-list">
+                <li class="adventures-list-item">
+                    <div class="container-icon-softs">
+                        <svg class="icon icon-softs" width="64" height="64">
+                          <use href="./images/icons.svg#icon-antenna"></use>
+                        </svg>
+                      </div>
+                    <h3 class="adventures-subtitle">Strategy</h3>  
+                    <p class="adventures-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                </li>
+                <li class="adventures-list-item"> 
+                    <div class="container-icon-softs">
+                        <svg class="icon icon-softs" width="64" height="64">
+                          <use href="./images/icons.svg#icon-clock"></use>
+                        </svg>
+                      </div>
+                    <h3 class="adventures-subtitle">Punctuality</h3>
+                    <p class="adventures-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                </li>
+                <li class="adventures-list-item">
+                    <div class="container-icon-softs">
+                        <svg class="icon icon-softs" width="64" height="64">
+                          <use href="./images/icons.svg#icon-diagram"></use>
+                        </svg>
+                      </div>
+                    <h3 class="adventures-subtitle">Diligence</h3>
+                    <p class="adventures-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                </li>
+                <li class="adventures-list-item">
+                    <div class="container-icon-softs">
+                        <svg class="icon icon-softs" width="64" height="64">
+                          <use href="./images/icons.svg#icon-astronaut"></use>
+                        </svg>
+                      </div>
+                    <h3 class="adventures-subtitle">Technologies</h3>
+                    <p class="adventures-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                </li>
+            </ul>
         </div>
-      </section>
-      <!--end of "Section 1" in Figma; "друга секція" у ДЗ-->
-      <!--"Section 2" in Figma; "третя секція" у ДЗ-->
-      <!-- Третя секція -->
-
-      <section class="ourteam">
+        </section>
+        <!-- #andregion sectiontwo -->
+        <!-- #region sectionthree -->
+        <section class="team">
         <div class="container">
-          <h2 class="ourteam-title">Our Team</h2>
-          <ul class="ourteam-list">
-            <!-- Team Card 1 -->
-            <li class="ourteam-member">
-              <img
-                src="./images/teamcard1markguerreroproductdesigner.jpg"
-                alt="mark guerrero product designer"
-                width="264"
-                class="team-member-photo"
-              />
-              <div class="ourteam-member-info">
-                <h3 class="ourteam-member-name">Mark Guerrero</h3>
-                <p class="ourteam-member-position">Product Designer</p>
-              </div>
-            </li>
-
-            <!-- Team Card 2 -->
-            <li class="ourteam-member">
-              <img
-                src="./images/teamcard2tomfordfrontenddeveloper.jpg"
-                alt="tom ford frontend developer"
-                width="264"
-                class="team-member-photo"
-              />
-              <div class="ourteam-member-info">
-                <h3 class="ourteam-member-name">Tom Ford</h3>
-                <p class="ourteam-member-position">Frontend Developer</p>
-              </div>
-            </li>
-
-            <!-- Team Card 3 -->
-            <li class="ourteam-member">
-              <!-- <div class="ourteam-member-container"> -->
-              <img
-                src="./images/teamcard3camilagarciamarketing.jpg"
-                alt="camila garcia marketing"
-                width="264"
-                class="team-member-photo"
-              />
-              <div class="ourteam-member-info">
-                <h3 class="ourteam-member-name">Camila Garcia</h3>
-                <p class="ourteam-member-position">Marketing</p>
-              </div>
-              <!-- </div> -->
-            </li>
-
-            <!-- Team Card 4 -->
-            <li class="ourteam-member">
-              <!-- <div class="ourteam-member-container"> -->
-              <img
-                src="./images/teamcard4danielwilsonuidesigner.jpg"
-                alt="daniel wilson UI designer"
-                width="264"
-                class="team-member-photo"
-              />
-              <div class="ourteam-member-info">
-                <h3 class="ourteam-member-name">Daniel Wilson</h3>
-                <p class="ourteam-member-position">UI Designer</p>
-              </div>
-              <!-- </div> -->
-            </li>
-          </ul>
+            <h2 class="team-title">Our Team</h2>
+            <ul class="team-list">
+                <li class="team-list-item">
+                    <img class="img" src="./images/images-sectiontwo/img1.jpg" alt="Mark-Guerrero" width="264" height="260">
+                  <div class="div-subtitle-text">
+                    <h3 class="team-subtitle">Mark Guerrero</h3>
+                    <p class="team-text">Product Designer</p>
+                <ul class="icon-list">
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="team-list-item">
+                    <img class="img" src="./images/images-sectiontwo/img2.jpg" alt="Tom-Ford" width="264" height="260">
+                    <div class="div-subtitle-text">
+                    <h3 class="team-subtitle">Tom Ford</h3>
+                    <p class="team-text">Frontend Developer</p>
+                
+                <ul class="icon-list">
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="team-list-item">
+                    <img class="img" src="./images/images-sectiontwo/img3.jpg" alt="Camila-Garcia" width="264" height="260">
+                    <div class="div-subtitle-text">
+                    <h3 class="team-subtitle">Camila Garcia</h3>
+                    <p class="team-text">Marketing</p>
+                
+                <ul class="icon-list">
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="team-list-item">
+                    <img class="img" src="./images/images-sectiontwo/img4.jpg" alt="Daniel-Wilson" width="264" height="260">
+                    <div class="div-subtitle-text">
+                    <h3 class="team-subtitle">Daniel Wilson</h3>
+                    <p class="team-text">UI Designer</p>
+                
+                <ul class="icon-list">
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list-items">
+                      <a href="" class="icon-list-items-link">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </ul>
         </div>
-      </section>
-      <!--end of "Section 2" in Figma; "третя секція" у ДЗ-->
-      <!--"Section 3" in Figma; "четверта секція" у ДЗ-->
-      <section class="ourportfolio">
+        </section>
+        <!-- #endregion sectionthree -->
+        <!-- #region sectionfour -->
+        <section class="portfolio">
         <div class="container">
-          <h2 class="ourportfolio-title">Our Portfolio</h2>
-          <ul class="ourportfolio-list">
-            <li class="ourportfolio-item">
-              <img
-                src="./images/banking-app.jpg"
-                alt="screens of the banking application"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Banking App</h3>
-                <p class="ourportfolio-item-text">App</p>
+           <h2 class="portfolio-title">Our Portfolio</h2>
+           <ul class="portfolio-list">
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Banking-App.jpg" alt="Banking-App" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Banking App</h3>
+                <p class="portfolio-text">App</p>
+            </div>
             </li>
-            <li class="ourportfolio-item">
-              <img
-                src="./images/cashless-payment.jpg"
-                alt="contactless cashless payment"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Cashless Payment</h3>
-                <p class="ourportfolio-item-text">Marketing</p>
+            
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Cashless-Payment.jpg" alt="Cashless-Payment" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Cashless Payment</h3>
+                <p class="portfolio-text">Marketing</p>
+                </div>
             </li>
-            <li class="ourportfolio-item">
-              <img
-                src="./images/meditaion-app.jpg"
-                alt="a laptop and a mobile phone with a start page"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Meditation App</h3>
-                <p class="ourportfolio-item-text">App</p>
+
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Meditation-App.jpg" alt="Meditation-App" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Meditation App</h3>
+                <p class="portfolio-text">App</p>
+                </div>
             </li>
-            <li class="ourportfolio-item">
-              <img
-                src="./images/taxi-service.jpg"
-                alt="steering wheel and dashboard of a car with a mobile phone on a torpedo"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Taxi Service</h3>
-                <p class="ourportfolio-item-text">Marketing</p>
+
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Taxi-Service.jpg" alt="Taxi-Service" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Taxi Service</h3>
+                <p class="portfolio-text">Marketing</p>
+                </div>
             </li>
-            <li class="ourportfolio-item">
-              <img
-                src="./images/screen-illustrations.jpg"
-                alt="mobile phone and screen saver options"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Screen Illustrations</h3>
-                <p class="ourportfolio-item-text">Design</p>
+
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Screen-Illustrations.jpg" alt="Screen-Illustrations" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Screen Illustrations</h3>
+                <p class="portfolio-text">Design</p>
+                </div>
             </li>
-            <li class="ourportfolio-item">
-              <img
-                src="./images/online-courses.jpg"
-                alt="a girl in an orange sweater, glasses and a gray cap with a mobile phone in headphones"
-                width="360"
-                class="ourportfolio-item-photo"
-              />
-              <div class="ourportfolio-item-container">
-                <h3 class="ourportfolio-item-title">Online Courses</h3>
-                <p class="ourportfolio-item-text">Marketing</p>
+
+            <li class="portfolio-list-item">
+              <div class="portfolio-hover-text">
+                <img class="img" src="./images/images-our-portfolio/Online-Courses.jpg" alt="Online-Courses" width="360" height="300">
+                <p class="portfolio-text-card">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+                <div class="div-portfolio-text">
+                <h3 class="portfolio-subtitle">Online Courses</h3>
+                <p class="portfolio-text">Marketing</p>
+                </div>
             </li>
-          </ul>
+           </ul>
         </div>
-      </section>
-      <!--end of "Section 3" in Figma; "четверта секція" у ДЗ-->
+        </section>
+        <!-- #endregion sectionfour -->
     </main>
-    <!--footer-->
+    <!-- #region footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo">
-          Web<span class="footer-logo-interval">Studio</span>
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </div>
-    </footer>
-  </body>
-</html>
+        <div class="container container-footer">
+          <div class="container-logo-text">
+            <a class="footer-logo" href="./index.html">Web<span class="footer-logo-color">Studio</span></a>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+  
+          <div class="container-soc-footer">
+            <p class="text-soc-footer">Social media</p>
+            <ul class="icon-list-footer">
+              <li class="icon-list-items">
+                <a href="" class="icon-list-items-link-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-list-items">
+                <a href="" class="icon-list-items-link-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-list-items">
+                <a href="" class="icon-list-items-link-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-list-items">
+                <a href="" class="icon-list-items-link-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
